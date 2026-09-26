@@ -1,0 +1,10 @@
+{
+  "daily_dir": "/absolute/path/to/your/daily-reports",
+  "off_work_subdir": ".off-work",
+  "obsidian_vault": null,
+  "projects": {
+    "平台别名": "项目A",
+    "另一个别名": "项目B"
+  },
+  "external_sync": null
+}
