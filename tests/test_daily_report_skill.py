@@ -17,7 +17,7 @@ import sys
 from pathlib import Path
 from unittest import mock
 
-SKILL_ROOT = Path(__file__).resolve().parent.parent
+SKILL_ROOT = Path(__file__).resolve().parent.parent / "skills" / "daily-report"
 SCRIPT_PATH = SKILL_ROOT / "scripts" / "resolve_daily_paths.py"
 
 

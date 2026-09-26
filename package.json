@@ -1,0 +1,46 @@
+{
+  "name": "daily-report-skill",
+  "version": "0.1.0",
+  "description": "Cross-session daily report skill for AI coding agents: record work items, preview a report, archive to Obsidian or plain Markdown.",
+  "keywords": [
+    "hermes-agent",
+    "hermes-skill",
+    "agent-skill",
+    "daily-report",
+    "obsidian",
+    "markdown",
+    "journaling",
+    "workflow"
+  ],
+  "license": "MIT",
+  "author": "JhinZhao",
+  "homepage": "https://github.com/JhinZhao/daily-report#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhinZhao/daily-report.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JhinZhao/daily-report/issues"
+  },
+  "bin": {
+    "daily-report-skill": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "python3 -m pytest tests/ -q",
+    "install-skill": "node bin/install.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ]
+}
