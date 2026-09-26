@@ -74,17 +74,14 @@ npx github:JhinZhao/daily-report --print-dir
 ### 方式 2：Hermes Agent
 
 ```bash
-# 方式 A：直接从仓库克隆到 skills 目录
 git clone https://github.com/JhinZhao/daily-report.git /tmp/daily-report-src
 cp -r /tmp/daily-report-src/skills/daily-report ~/.hermes/skills/
 
-# 方式 B：把这个仓库加为 skill 源，再用 Hermes 安装
-hermes skills tap add JhinZhao/daily-report
-hermes skills search daily-report --source github
-hermes skills install <上一步列出的 identifier>
+# 验证
+hermes skills list | grep daily-report
 ```
 
-装完确认：`hermes skills list | grep daily-report`
+> 本 skill 被 Hermes 官方仓库收录后，可直接 `hermes skills install official/productivity/daily-report`。在那之前请用 npx（方式 1）或上面的 clone 方式。
 
 ### 方式 3：手动（任何 agent 框架）
 

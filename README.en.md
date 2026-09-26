@@ -76,13 +76,11 @@ Needs Node ≥ 16. npx fetches the package straight from GitHub — **no npm pub
 git clone https://github.com/JhinZhao/daily-report.git /tmp/daily-report-src
 cp -r /tmp/daily-report-src/skills/daily-report ~/.hermes/skills/
 
-# or register this repo as a skill source
-hermes skills tap add JhinZhao/daily-report
-hermes skills search daily-report --source github
-hermes skills install <identifier-from-the-search>
+# verify
+hermes skills list | grep daily-report
 ```
 
-Verify: `hermes skills list | grep daily-report`
+> Once this skill is accepted into the official Hermes repository it becomes installable with `hermes skills install official/productivity/daily-report`. Until then, use npx (Option 1) or the clone above.
 
 ### Option 3: Manual (any agent framework)
 
